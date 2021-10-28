@@ -274,19 +274,38 @@ html { box-sizing: border-box; }
 
 @media screen and (min-width: 1100px) {
     .kontejner {
-        max-width: 1200px;
-        padding: 60px 80px;
+        max-width: 100%;
     }
+
     .horni-cast {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+
 
     }
 
     .happy-travels {
         text-align: left;
+        width: 490px;
     }
+
+    header {
+        width: 490px;
+    }
+
+
+    .hlavni-obrazek {
+        max-width: 425px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 
     h1 {
         text-align: left;
@@ -307,22 +326,25 @@ html { box-sizing: border-box; }
 
     hr {
         margin-left: 0;
-        margin-right: 580px;
+        margin-right: 420px;
     }
 
     .tlacitko {
         margin-right: 20px;
     }
 
-    .hlavni-obrazek {
-        width: 425px;
-    }
 
     .prostredni-cast {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        gap: 60px;
+        margin-bottom: 80px;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     .zajezdy,
@@ -331,8 +353,8 @@ html { box-sizing: border-box; }
     .vylety,
     .objednavka,
     .pronajem {
-        width: 170px;
-        height: 191px;
+        /*width: 170px;
+        height: 191px;*/
         border: 1px solid #407BFF1F;
         border-radius: 10px;
         background-color: #FFFFFF;
@@ -352,25 +374,32 @@ html { box-sizing: border-box; }
 
     .prostredni-cast-popis {
         text-align: left;
-        margin-left: 40px;
+        
 
     }
     
     .planovani {
         text-align: left;
         margin: 0;
+        width: 430px;
     }
 
     .dolni-cast {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 60px;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+
 
 
     }
 
     .dolni-cast-popis {
         text-align: left;
+        max-width: 430px;
 
     }
 
@@ -380,13 +409,16 @@ html { box-sizing: border-box; }
         margin-right: 60px;
     }
 
-    .dolni-cast-popis h2 {
-        margin-top: 119px;
-    }
-
     .karticky2 {
         margin-top: 80px;
+                width: 550px;
+
     }
+
+    .karticky1 {
+        width: 550px;
+    }
+
 
     
 
