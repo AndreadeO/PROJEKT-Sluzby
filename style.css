@@ -151,8 +151,11 @@ html { box-sizing: border-box; }
     }
 
     h2 {
-        margin-top: 60px;
+        font-size: 16px;
+        color: #000000;
         font-weight: 500;
+        margin-top: 80px;
+        margin-bottom: 17px;
         
     }
 
@@ -164,7 +167,7 @@ html { box-sizing: border-box; }
 
 
     .kontejner {
-        width: 768px;
+        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
         border: 2px solid #407BFF1F;
@@ -174,7 +177,9 @@ html { box-sizing: border-box; }
     .karticky1,
     .karticky2 {
         display: flex;
-        padding: 15px 20px;
+        justify-content: space-between;
+
+        
 
     }
 
@@ -184,19 +189,19 @@ html { box-sizing: border-box; }
         margin-right: auto;
     }
 
-    .specializace {
-        margin-top: 30px;
-    }
-
     .planovani,
     .delegati {
-        margin-top: 15px;
+        margin-bottom: 40px;
+
     }
 
     .specializace,
     .planovani,
     .delegati {
-        margin-bottom: 30px;
+        max-width: 550px;
+        margin: 30px 109px;
+
+
     }
 
     .tlacitko {
@@ -234,12 +239,12 @@ html { box-sizing: border-box; }
     .vylety,
     .objednavka,
     .pronajem {
-        
+        max-width: 230px;
         border: 1px solid #407BFF1F;
-        margin-right: 20px;
         border-radius: 10px;
         background-color: #FFFFFF;
         box-shadow: 0px 4px 6px #407BFF1F;
+        padding: 45px 15px;
     }
 
      
@@ -249,7 +254,7 @@ html { box-sizing: border-box; }
     .palma,
     .slunecnik,
     .karavan {
-        margin: 45px 40px 20px 40px;
+        margin: 0 40px 20px 40px;
     }
 
     .karticky1 p,
@@ -265,4 +270,12 @@ html { box-sizing: border-box; }
 
 
 
+}
+
+@media screen and (min-width: 1100px) {
+
+
+
+
+    
 }
