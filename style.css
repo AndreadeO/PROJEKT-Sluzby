@@ -20,20 +20,22 @@ html { box-sizing: border-box; }
         padding: 60px 20px 60px 20px;
     }
 
-
-    h1 {
+    h1, h2 {
         font-weight: 500;
-        font-size: 28px;
         color: #000000;
+
+
+
+    }
+    h1 {
+        font-size: 28px;
         text-align: center;
         margin-top: 40px;
         margin-bottom: 10px;
     }
 
     h2 {
-        font-weight: 500;
         margin-top: 60px;
-
     }
 
     hr {
@@ -83,9 +85,6 @@ html { box-sizing: border-box; }
         border: 1px solid #8B8B8B;
         background-color: #8B8B8B;
         margin-bottom: 60px;
-        
-        
-
     }
 
     .zajezdy,
@@ -120,10 +119,7 @@ html { box-sizing: border-box; }
         margin-top: auto;
         margin-bottom: auto;
     }
-
-    
-
-
+ 
 }
 
 @media screen and (min-width: 640px) {
@@ -137,10 +133,13 @@ html { box-sizing: border-box; }
         color: #8B8B8B;   
     }
 
-    h1 {
+    h1, h2 {
         font-weight: 500;
-        font-size: 28px;
         color: #000000;
+    }
+
+    h1 {
+        font-size: 28px;
         text-align: center;
         margin-top: 40px;
         margin-bottom: 10px;
@@ -148,11 +147,8 @@ html { box-sizing: border-box; }
 
     h2 {
         font-size: 16px;
-        color: #000000;
-        font-weight: 500;
         margin-top: 80px;
-        margin-bottom: 17px;
-        
+        margin-bottom: 17px; 
     }
 
     hr {
@@ -174,9 +170,6 @@ html { box-sizing: border-box; }
     .karticky2 {
         display: flex;
         justify-content: space-between;
-
-        
-
     }
 
     .hlavni-obrazek {
@@ -188,7 +181,6 @@ html { box-sizing: border-box; }
     .planovani,
     .delegati {
         margin-bottom: 40px;
-
     }
 
     .specializace,
@@ -196,8 +188,6 @@ html { box-sizing: border-box; }
     .delegati {
         max-width: 550px;
         margin: 30px 109px;
-
-
     }
 
     .tlacitko {
@@ -221,12 +211,7 @@ html { box-sizing: border-box; }
         background-color: #8B8B8B;
         margin-bottom: 60px;
         
-        
-
     }
-
-          
-    
 
     .zajezdy,
     .exotika,
@@ -261,10 +246,6 @@ html { box-sizing: border-box; }
         margin-bottom: auto;
     }
 
-
-
-
-
 }
 
 @media screen and (min-width: 1100px) {
@@ -272,28 +253,47 @@ html { box-sizing: border-box; }
         max-width: 100%;
     }
 
-    .horni-cast {
+    .horni-cast,
+    .prostredni-cast,
+    .dolni-cast {
         display: flex;
-        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 80px;
         max-width: 1040px;
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    .horni-cast,
+    .prostredni-cast {
+        flex-direction: row-reverse;
+        margin-bottom: 80px;
 
     }
 
-    .happy-travels {
+    .prostredni-cast,
+    .dolni-cast {
+        gap: 60px;
+    }
+
+    .prostredni-cast-popis,
+    .dolni-cast-popis {
         text-align: left;
-        width: 490px;
     }
 
+    .dolni-cast-popis {
+        max-width: 430px;
+    }
+
+    .happy-travels,
     header {
         width: 490px;
     }
 
+    .happy-travels {
+        text-align: left;  
+    }
 
     .hlavni-obrazek {
         max-width: 425px;
@@ -301,22 +301,9 @@ html { box-sizing: border-box; }
         margin-left: auto;
     }
 
-
     h1 {
         text-align: left;
         margin-top: 73px;
-    }
-
-    .prostredni-cast-popis h2 {
-        margin-bottom: 17px;
-        margin-top: 0; 
-
-    }
-
-    .specializace {
-        text-align: left;
-        margin-left: 0;
-        max-width: 488px;
     }
 
     hr {
@@ -324,22 +311,14 @@ html { box-sizing: border-box; }
         margin-right: 420px;
     }
 
-    .tlacitko {
-        margin-right: 20px;
+    .prostredni-cast-popis h2 {
+        margin-bottom: 17px;
+        margin-top: 0; 
     }
 
-
-    .prostredni-cast {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        gap: 60px;
-        margin-bottom: 80px;
-        max-width: 1040px;
-        margin-left: auto;
-        margin-right: auto;
-
+    .tlacitko {
+        margin-right: 20px;
+        margin-top: 30px;
     }
 
     .zajezdy,
@@ -348,8 +327,6 @@ html { box-sizing: border-box; }
     .vylety,
     .objednavka,
     .pronajem {
-        /*width: 170px;
-        height: 191px;*/
         border: 1px solid #407BFF1F;
         border-radius: 10px;
         background-color: #FFFFFF;
@@ -366,56 +343,38 @@ html { box-sizing: border-box; }
         font-weight: 300;
         margin: 0;
     }
-
-    .prostredni-cast-popis {
-        text-align: left;
-        
-
-    }
     
-    .planovani {
+    .planovani,
+    .delegati,
+    .specializace {
         text-align: left;
         margin: 0;
+
+
+    }
+    .planovani {
         width: 430px;
     }
 
-    .dolni-cast {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 60px;
-        max-width: 1040px;
-        margin-left: auto;
-        margin-right: auto;
-
-
-
-    }
-
-    .dolni-cast-popis {
-        text-align: left;
-        max-width: 430px;
-
-    }
 
     .delegati {
-        text-align: left;
-        margin: 0;
         margin-right: 60px;
     }
 
-    .karticky2 {
-        margin-top: 80px;
-                width: 550px;
-
+    .specializace {
+        margin-left: 0;
+        max-width: 488px;
     }
 
-    .karticky1 {
+    .karticky1,
+    .karticky2 {
         width: 550px;
     }
 
+    .karticky2 {
+        margin-top: 80px;    
+    }
 
-    
 
 
     
